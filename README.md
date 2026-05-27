@@ -81,7 +81,7 @@ findy-app/
 - Background gradient moderne
 - Animation au chargement
 
-### ℹÀ Propos
+### À Propos
 - Présentation de FINDY
 - Statistiques clés
 - Points forts du service
