@@ -331,7 +331,7 @@ document.body.innerHTML = '<script>alert("XSS")</script>'
 4. Vérifier CSS specificity
 ```
 
-## 🎬 Test Final End-to-End
+## Test Final End-to-End
 
 Simulation complète d'un utilisateur:
 
