@@ -1,0 +1,26 @@
+{
+  "name": "findy-app",
+  "version": "1.0.0",
+  "description": "FINDY - Plateforme parentale pour aider les pères à devenir ce qu'ils ont toujours voulu être",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "npx http-server -p 8000 -o",
+    "dev": "npx live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fatherhood",
+    "parenting",
+    "education",
+    "findy",
+    "responsive",
+    "web"
+  ],
+  "author": "FINDY Team",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  }
+}

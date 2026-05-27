@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FINDY - Une plateforme pour aider les pères à devenir ce qu'ils ont toujours voulu être">
+    <meta name="keywords" content="fatherhood, parenting, education, findy">
+    <title>FINDY - Plateforme Parentale pour les Pères</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>FINDY</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#gallery" class="nav-link">Galerie</a></li>
+                <li><a href="#apply" class="nav-link">Candidature</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Devenir un Père Épanoui</h2>
+            <p class="hero-subtitle">FINDY vous aide à devenir ce que vous avez toujours voulu être en tant que père</p>
+            <button class="btn btn-primary" onclick="scrollToSection('apply')">Commencer</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">À Propos de FINDY</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>FINDY est une compagnie qui aide les pères à devenir ce qu'ils ont toujours voulu être. Les pères peuvent maintenant incarner le rôle clé à la maison avec FINDY.</p>
+                    <p>Ici vous pourrez apprendre les bases de l'éducation des enfants et de l'auto-soins. Tous nos clients à travers le monde sont satisfaits et nous ne pouvons pas attendre de vous voir parmi nous.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>+500</h3>
+                        <p>Pères Épanouis</p>
+                    </div>
+                    <div class="stat">
+                        <h3>+50</h3>
+                        <p>Cours Disponibles</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Satisfaction Client</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Nos Moments</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <svg viewBox="0 0 200 200" class="gallery-svg">
+                        <circle cx="100" cy="100" r="80" fill="#FFD700"/>
+                        <text x="100" y="110" text-anchor="middle" font-size="24" fill="white">Mariage</text>
+                    </svg>
+                    <h3>Famille Unies</h3>
+                </div>
+                <div class="gallery-item">
+                    <svg viewBox="0 0 200 200" class="gallery-svg">
+                        <rect width="200" height="200" fill="#87CEEB"/>
+                        <text x="100" y="110" text-anchor="middle" font-size="20" fill="white">Paternité</text>
+                    </svg>
+                    <h3>Paternité Joyeuse</h3>
+                </div>
+                <div class="gallery-item">
+                    <svg viewBox="0 0 200 200" class="gallery-svg">
+                        <polygon points="100,20 180,170 20,170" fill="#FF6347"/>
+                        <text x="100" y="110" text-anchor="middle" font-size="20" fill="white">Voyage</text>
+                    </svg>
+                    <h3>Aventures</h3>
+                </div>
+                <div class="gallery-item">
+                    <svg viewBox="0 0 200 200" class="gallery-svg">
+                        <rect x="20" y="20" width="160" height="160" rx="20" fill="#32CD32"/>
+                        <text x="100" y="110" text-anchor="middle" font-size="20" fill="white">BBQ</text>
+                    </svg>
+                    <h3>Moments Partagés</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Section -->
+    <section id="apply" class="apply">
+        <div class="container">
+            <h2 class="section-title">Postuler à FINDY</h2>
+            <div class="apply-content">
+                <div class="apply-info">
+                    <h3>Documents Requis</h3>
+                    <ul class="requirements-list">
+                        <li><strong>CV (Curriculum Vitae)</strong> - Préférence PDF</li>
+                        <li><strong>Documents Additionnels</strong> - Diplômes, certificats, relevés de notes (en un seul PDF de préférence)</li>
+                        <li><strong>Lettre de Motivation</strong> - Optionnelle</li>
+                    </ul>
+                </div>
+                <div class="apply-form-container">
+                    <form class="apply-form" id="applyForm">
+                        <div class="form-group">
+                            <label for="name">Nom Complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer Candidature</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Recherche d'Emploi</h3>
+                    <p>Trouvez des offres d'emploi adaptées à votre profil</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👤</div>
+                    <h3>Profil Personnel</h3>
+                    <p>Créez et gérez votre profil professionnel</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Candidatures en Ligne</h3>
+                    <p>Postulez facilement à travers notre portail</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔔</div>
+                    <h3>Alertes Emploi</h3>
+                    <p>Recevez les nouvelles offres par notification</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Suivi Candidature</h3>
+                    <p>Suivez l'évolution de vos candidatures</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💬</div>
+                    <h3>Support Client</h3>
+                    <p>Une équipe prête à vous aider 24/7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Nous Contacter</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4>Email</h4>
+                        <p>contact@findy.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Téléphone</h4>
+                        <p>+33 1 23 45 67 89</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Adresse</h4>
+                        <p>123 Rue de la Paternité<br>75001 Paris, France</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FINDY. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

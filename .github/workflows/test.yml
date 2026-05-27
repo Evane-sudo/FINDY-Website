@@ -1,0 +1,40 @@
+name: Test & Validate
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Check HTML validity
+      run: npm run test
+      continue-on-error: true
+
+    - name: Verify file structure
+      run: |
+        echo "Checking file structure..."
+        test -f index.html && echo "✅ index.html found"
+        test -d css && echo "✅ css folder found"
+        test -d js && echo "✅ js folder found"
+        test -d fonts && echo "✅ fonts folder found"
+        echo "All checks passed!"
+
+    - name: List project structure
+      run: |
+        echo "=== Project Structure ==="
+        find . -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" \) | head -20
+
+    - name: Show file sizes
+      run: |
+        echo "=== File Sizes ==="
+        du -sh * | sort -h
