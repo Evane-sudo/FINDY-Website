@@ -2,7 +2,7 @@
 
 Une plateforme web moderne et responsive dédiée à aider les pères à devenir ce qu'ils ont toujours voulu être.
 
-##  À Propos
+## À Propos
 
 FINDY est une compagnie qui aide les pères à incarner le rôle clé à la maison. La plateforme offre des ressources, des formations et un soutien communautaire pour la parentalité positive et l'auto-soins.
 
